@@ -8,11 +8,15 @@ alex.color("blue")         # Set the attribute red
 alex.pensize(3)
 alex.speed(10)
 colors = ["red","orange","blue","SeaGreen3"]
+size = 200
+sizefactor = 1
 for c in colors:
+    size = size/sizefactor
+    sizefactor = sizefactor + 1
     alex.color(c)
     for j in range(12):
         for i in range(4):
-            alex.forward(50)             # Make alex draw a square
+            alex.forward(size)             # Make alex draw a square
             alex.left(90)
             print(i)
         alex.left(30)
