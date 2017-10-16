@@ -6,4 +6,5 @@ for i in range(8):
     alex.forward(100)
     alex.left(360/8)
     
-wn.mainloop()    
+wn.mainloop()
+#demo
